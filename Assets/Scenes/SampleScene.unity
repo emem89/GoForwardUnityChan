@@ -536,7 +536,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: d1b0ec69e5df7634a9889e23e04e915b, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -876,6 +876,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UnityChan2D
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 1355a58c3bd9c40679bea54b926e0179, type: 3}
+      propertyPath: m_TagString
+      value: UnityChanTag
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1355a58c3bd9c40679bea54b926e0179, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.9
@@ -1084,7 +1088,7 @@ GameObject:
   - component: {fileID: 1602526105}
   m_Layer: 0
   m_Name: ground
-  m_TagString: Untagged
+  m_TagString: GroundTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
