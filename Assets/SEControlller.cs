@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SEControlller : MonoBehaviour
 {
@@ -16,22 +17,19 @@ public class SEControlller : MonoBehaviour
         
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    public void OnClick(int num)
     {
-        //tag取得
-        if (collision.gameObject.tag == "UnityChanTag")
+        switch (num)
         {
-            Debug.Log("unitychan");
-        }
-        if (collision.gameObject.tag == "GroundTag")
-        {
-            Debug.Log("ground");
-            GetComponent<AudioSource>().Play(); // SE
-        }
-        if (collision.gameObject.tag == "BlockTag")
-        {
-            Debug.Log("cube");
-            GetComponent<AudioSource>().Play(); // SE
+            case 0: //押されたボタンのUnity側で設定された引数が1のだったとき
+                Debug.Log("food");
+                break;
+            case 1: //押されたボタンのUnity側で設定された引数が2のだったとき
+                Debug.Log("exercise");
+                break;
+            case 2: //押されたボタンのUnity側で設定された引数が3のだったとき
+                Debug.Log("sleep");
+                break;
         }
     }
 }
